@@ -69,15 +69,3 @@ jobs:
         run: |
           npm run deploy
 
-      - name: Delete Branch
-        run: |
-          git push origin :githubcicd
-
-      - name: Lint
-        run: |
-          ng lint
-
-      - name: Audit 
-          run: |
-          npm audit fix
-
